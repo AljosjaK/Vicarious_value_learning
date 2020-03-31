@@ -15,6 +15,7 @@ https://miktex.org/
 Open RStudio and install the necessary packages:
 
 (Run the commands below)
+
  install.packages("rticles")
  
  install.packages("knitr")
