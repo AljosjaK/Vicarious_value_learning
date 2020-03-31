@@ -16,10 +16,15 @@ Open RStudio and install the necessary packages:
 
 (Run the commands below)
  install.packages("rticles")
+ 
  install.packages("knitr")
+ 
  install.packages("tidyverse")
+ 
  install.packages("lsr")
+ 
  install.packages("rstatix")
+ 
  install.packages("psych")  
 
 Download this repository and open: "Vicarious_value_learning_master.Rmd" in RStudio. 
