@@ -46,6 +46,7 @@ header-includes: |
   \usepackage{float}
   \floatplacement{figure}{H}
   \usepackage{graphicx}
+  \usepackage{caption}
 output: 
   rticles::elsevier_article:
         latex_engine: xelatex
@@ -182,10 +183,14 @@ explained (is predicted) by the Associative Two-Process theory [@lowe2016minimal
 @trapold1970expectancies; @urcuioli2005behavioral]. By this theory DOT is suggested to
 lead, in subjects, to the formation of differential expectations of outcomes that can be
 associated with stimuli and responses (‘prospective process’) whereas stimuli and responses
-can also be associated as per the standard instrumental learning theory (‘retrospective process’). 
+can also be associated as per the standard instrumental learning theory (‘retrospective process’).
+I.e. a 'prospective' process is the formation of an association route that pairs a stimuli with 
+some specific future outcome, while the standard instrumental associations are
+retrospective in the sense that they are formed without being contingent on this future expectation
+but after some outcome has been received.
 
-A typical ToC procedure is illustrated in Figure 1. Figure 1a shows (top) the S-R-O contingencies of
-each of the three stages of the procedure, and (bottom) the Associative Two-Process
+A typical ToC procedure is illustrated in Figure 1. Figure 1 (left) shows (top) the S-R-O contingencies
+of each of the three stages of the procedure, and (bottom) the Associative Two-Process
 predictions that are made. The key point is that by the transfer test stage (Stage 3) when
 subjects are presented with the stimuli from Stage 2 and the responses from Stage 1
 subjects are able to draw on associative knowledge of differential Stimulus-(Outcome)-Expectation 
@@ -193,10 +198,18 @@ subjects are able to draw on associative knowledge of differential Stimulus-(Out
 1) that enable them to infer the correct response for those Stage 2 stimuli in the
 instrumental test (Stage 3) in spite of never previously having been presented with these
 particular Stimulus-Response pairs. By Associative Two-Process theory subjects have
-learned S-E and E-R associations, and that forms a *transitive bridge* from which to infer
-non-learned particular S-R pairings (Figure 1, right).
+learned S-E and E-R associations, and that forms a *transitive bridge* connecting 
+non-learned particular S-R pairings (Figure 1, right). I.e. where
+the subject has learned the relation between expectancy and stimulus
+and between expectancy and response they also learn the relation between stimulus and response.
 
-\begin{figure}[h]
+<!-- By Associative Two-Process theory subjects have -->
+<!-- learned S-E and E-R associations, and that forms a *transitive bridge* from which to infer -->
+<!-- non-learned particular S-R pairings (Figure 1, right). The transitive bridge meaning that where -->
+<!-- the subject has learned the relation between expectancy and stimulus -->
+<!-- and between expectancy and respons they also learn the relation between stimulus and respons. -->
+
+\begin{figure}
 \begin{minipage}[t]{0.60\linewidth}
 \resizebox{\textwidth}{!}{
 \centering
@@ -220,7 +233,7 @@ non-learned particular S-R pairings (Figure 1, right).
 \vspace{-35pt}
 \includegraphics[width=\textwidth]{figure1.png}
 \end{minipage}
-\caption{Transfer of Control schema: Left) tabulation of stimulus-response (S-R) and outcome (O) presentations over the three stages (top) with the predicted associations learned according to Associative Two-Process theory (bottom; see Urcuioli, 2008). Right) schema of an Associative Two-Process whereby S-E and E-R associations (grey text) learned from Stage 1 and Stage 2 form a transitive bridge from which response selection (R2 in the example given here) can be inferred. Key: S1, S2, S3, S4 = Stimulus 1, Stimulus 2, etc.; R1, R2 = Response 1, Response 2; O1, O2 = Outcome 1, Outcome 2; E1, E2 = Outcome expectation 1, Outcome expectation 2; \o = no reward / incorrect response feedback.}
+\caption{Transfer of Control schema: Left) tabulation of stimulus-response (S-R) and outcome (O) presentations over the three stages (top) with the predicted associations learned according to Associative Two-Process theory (bottom; see Urcuioli, 2008). Right) schema of an Associative Two-Process whereby S-E and E-R associations (grey text) learned from Stage 1 and Stage 2 form a transitive bridge yielding a preferred response selection (R2 in the example given here). Key: S1, S2, S3, S4 = Stimulus 1, Stimulus 2, etc.; R1, R2 = Response 1, Response 2; O1, O2 = Outcome 1, Outcome 2; E1, E2 = Outcome expectation 1, Outcome expectation 2; \o = no reward / incorrect response feedback.}
 \label{fig:fig1}
 \end{figure}
 
@@ -240,19 +253,24 @@ participants in a social context. In @lowe2016minimalist we suggested that adapt
 Pavlovian stage to a form of passive observation in a social context would allow to test
 hypotheses as to whether participants can transfer knowledge learned from their own
 instrumental experience (Stage 1) and that within the passive social context (Stage 2) to
-novel instrumental selection in the standard test phase (Stage 3). Drawing on a review of
-how value systems are represented for *self* and *other* in joint activities
+novel instrumental selection in the standard test phase (Stage 3). 
+
+Drawing on a review of how value systems are represented for *self* and *other* in joint activities
 [@ruff2014neurobiology], we (in @lowe2016minimalist) hypothesized that participants would be
 able to vicariously learn the value observed for the other where the
 context is non-competitive. This is to say that participants experience the other’s stimuli and
-outcomes presentations as if they weretheir own and update their value function (differential
+outcomes presentations as if they were their own and update their value function (differential
 reward outcome expectations) accordingly. 
 
 This is in contrast to the competing hypothesis that
 individuals represent the value of self and other in separate neural-psychological substrates
-[@ruff2014neurobiology]. In the latter case a separate value representation of other would not have
-been associated with the individual’s previously experienced responses (Stage 1) thereby
-prohibiting the formation of the above-discussed *transitive bridge*. 
+[@ruff2014neurobiology]. If this hypothesis is true the value representation of other would not have
+been associated with the individual’s previously experienced responses (Stage 1), thereby
+prohibiting the formation of the above-discussed *transitive bridge*.
+
+<!-- In the latter case a separate value representation of other would not have -->
+<!-- been associated with the individual’s previously experienced responses (Stage 1) thereby -->
+<!-- prohibiting the formation of the above-discussed *transitive bridge*. -->
 
 A presupposition here is that
 in cases where individuals are able to view the other participant in the task, in perceiving the
@@ -275,7 +293,9 @@ procedure can apply in a social setting, b) such ToC effects, if found, owe to v
 value learning. In relation to a), Experiment 1 manipulated social setting by way of a
 condition providing stimulus-outcome feedback to participants of the performance of a
 screen-recorded (but with no face visible) *other* (confederate) with only audio feedback
-and with response feedback hidden. Experiment 2 manipulated social setting by showing
+and with response feedback hidden. 
+
+Experiment 2 manipulated social setting by showing
 only stimulus-emotion expression feedback of the performance of a videoed other
 (confederate) with perceptible facial feedback but no audio or response feedback from
 the confederate and no explicit outcome feedback provided. In relation to b), Experiment
@@ -283,7 +303,13 @@ the confederate and no explicit outcome feedback provided. In relation to b), Ex
 the ToC effect might be to perceived social conditions (vicarious inference), whereas
 Experiment 2 assessed a more explicit/emotion expressed social setting with facial
 affective feedback substituting for the explicit outcome that the other participant received
-(vicarious feeling). From @lowe2016minimalist it is predicted that if participants represent
+(vicarious feeling).In real world scenarios the experiments reflect situations where one 
+implicitly experience another's value associations without direct access to the emotional 
+responses from them and when such information is available, respectively. E.g. when learning that a
+colleague has been given an assignment and only later a promotion in the first case and when seeing the 
+same colleague immediately receiving praise for the work, in the latter.  
+
+From @lowe2016minimalist it is predicted that if participants represent
 the value of outcomes (reward-based) of the other according to separate neuralpsychological
 mechanisms, then the ToC effect should not occur. It is predicted that
 vicarious value learning is required for ToC effects to occur in a social context of the type
@@ -297,14 +323,28 @@ instrumental responses. Manipulating the type of perceptible transfer contingenc
 other – based on perceptible outcome (Experiment 1) and perceptible emotional
 expression (emotional contagion) from which to infer outcome (Experiment 2) – provided
 a means for assessing the robustness of the ToC to different controlled social contexts.
+
 Finally, for Experiment 2, we further hypothesized that, given vicarious value learning
 consistent results, EEG recordings would uncover mu suppression during the Pavlovian
 phase of the experiment, i.e. while the confederate was observable (via facial expressions)
-in the task. We base this hypothesis on evidence associating suppression of the EEG mu
-rhythm, a rhythm in the alpha frequency range (~8-12 Hz) over sensorimotor areas, with
-facial emotion processing [@enticott2008mirror]. This EEG measure provided us with a
-validation measure of participant social processing additional to subjective
-(questionnaire) feedback.
+in the task. That is, given that this social form of learning can take place, a signature
+of socioemotional processing would strengthen the result. Suppression of the EEG mu
+rhythm, a rhythm in the alpha frequency range (~8-12 Hz) over sensorimotor areas, has been indicated as  a neural signature of the activation of the mirror neuron system, a system essential for imitation
+learning and the understanding of others' actions and even intentions [@PinedaJaimeA2005Tfso;
+@GiacomoRizzolatti2001Nmut]. Activation of the system (and mu suppression) has to been shown to be 
+modulated by different degrees of social interaction [@oberman2007human] as well during processing of 
+emotional facial expressions [@enticott2008mirror; @MOORE2012309] and classification of emotion in
+faces [@MooreMatthew2017Mrsi]. This makes mu suppression a suitable candidate for an objective validation
+of socioemotional processing additional to subjective (questionnaire) feedback.
+
+<!-- Finally, for Experiment 2, we further hypothesized that, given vicarious value learning -->
+<!-- consistent results, EEG recordings would uncover mu suppression during the Pavlovian -->
+<!-- phase of the experiment, i.e. while the confederate was observable (via facial expressions) -->
+<!-- in the task. We base this hypothesis on evidence associating suppression of the EEG mu -->
+<!-- rhythm, a rhythm in the alpha frequency range (~8-12 Hz) over sensorimotor areas, with -->
+<!-- facial emotion processing [@enticott2008mirror]. This EEG measure provided us with a -->
+<!-- validation measure of participant social processing additional to subjective -->
+<!-- (questionnaire) feedback. -->
 
 Experiment 1
 ============
@@ -329,7 +369,7 @@ Outcomes Training, iii) Social Differential Outcomes Training, iv) Social NonDif
 Outcomes Training. Thus, there are two independent variables with two
 levels each: i) Differential vs Non-Differential Outcomes training, ii) Individual vs Social
 scenario. Each condition comprised a transfer of control (ToC) procedure consisting of 3
-stages of 20 trials each.
+stages of 20 trials each. The dependent variable was the number of correct responses in Stage 3.
 
 ### Materials and apparatus
 
@@ -352,13 +392,6 @@ include_graphics("figure2.jpg")
 ### Procedure
 
 An example of a single trial on Stage 1 can be visualized in Figure 3.
-
-```{r figure3, echo=FALSE, out.width='60%', fig.align="center", fig.cap="Trial progression Stage 1/3. For each trial the participant was presented with a stimulus superimposed on a white panel (top right) for 1000ms, followed by a blank/white (stimulus) panel for a further 2000ms, then two response options were presented at the bottom of the screen for 2000ms. The participants were required to respond (click on one of the two options) within the 2000ms time limit or a timeout and ‘incorrect’ feedback were presented. A correct response yielded an image of money (coins) that was either small (low reward) or large (high reward) and concomitantly increased the score bar (left-side horizontal column). An incorrect response (or no response) yielded a ‘no reward’ image and a reduction of the score bar."}
-
-include_graphics("figure3.jpg")
- 
-```
-
 Participants were given a pre-experiment warm-up phase to familiarize themselves with
 the task during and after which questions were permissible. Stimuli used in this warm-up
 phase were not used in the experimental conditions. Conditions were controlled for order
@@ -374,6 +407,12 @@ Below is provided a description of each of the three stages of the ToC procedure
 
 All stimuli (images) presented to the participants were presented randomly, one per trial,
 but such that there was always an equal number of each stimulus presented per stage.
+
+```{r figure3, echo=FALSE, out.width='60%', fig.align="center", fig.cap="Trial progression Stage 1/3. For each trial the participant was presented with a stimulus superimposed on a white panel (top right) for 1000ms, followed by a blank/white (stimulus) panel for a further 2000ms, then two response options were presented at the bottom of the screen for 2000ms. The participants were required to respond (click on one of the two options) within the 2000ms time limit or a timeout and ‘incorrect’ feedback were presented. A correct response yielded an image of money (coins) that was either small (low reward) or large (high reward) and concomitantly increased the score bar (left-side horizontal column). An incorrect response (or no response) yielded a ‘no reward’ image and a reduction of the score bar."}
+
+include_graphics("figure3.jpg")
+ 
+```
 
 ### Stage 1 – Instrumental learning phase:
 
@@ -569,8 +608,8 @@ between 22-46 years ($M_{age} = 26.6$) with 23 males and 10 females. One partici
 excluded from the EEG analysis due to highly unreliable data not salvageable through the
 standardised processing steps used for all other participants. Calculating the effect of
 the contrast between differential and non-differential outcomes *within* the social level
-yielded Cohen's $d=$ `r round(cd)`. Utilising this simple effect in a sample size calculation 
-for a one-sided t-test (since our hypothesis is directional), with power $= .8$, $\alpha = .05$,
+yielded Cohen's $d=$ `r round(cd, 3)`. Utilising this simple effect in a sample size calculation 
+for a one-sided t-test (directional hypothesis), with power $= .8$, $\alpha = .05$,
 resulted in N = 29. 
 
 ### Design
@@ -619,7 +658,7 @@ generator in the program and the first trial always gave a negative reward/punis
   \text{High Reward} &  & \cellcolor{green!25}.82 &  & \cellcolor{red!25}-.04 &  &  &  &  & \cellcolor{green!25}.10 &  & \cellcolor{green!25}.45 &\cellcolor{green!25}.39 & \cellcolor{green!25}.44 &  & \cellcolor{green!25}.18 & \cellcolor{green!25}.82 &  & \cellcolor{green!25}.36 &  & \cellcolor{green!25}.19  \\ \hline
   \text{Low Reward} &  &  & \cellcolor{red!25}-.33 &  & \cellcolor{red!25}-.41 & \cellcolor{red!25}-.24 & \cellcolor{red!25}-.20 & \cellcolor{red!25}-.28 &  & \cellcolor{red!25}-.07 &  &  &  & \cellcolor{red!25}-.29 &  &  & \cellcolor{red!25}-.16 &  & \cellcolor{red!25}-.57 &  \\ \hline
   \text{Negative Reward} & \cellcolor{red!25}-.32 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &    \\
-    \hline
+  \hline
 \end{tabular}}
 \caption{\textbf{FaceReader valence evaluations of confederate facial expressions in response to differential rewarding outcomes.} Valence computations were in the range -1 to 1. The table shows the maximum values recorded in response to the outcome for each trial. Key: Green-filled tabulations indicate that FaceReader computed a positive valenced expression; Red-filled tabulations indicate that FaceReader computed a negative valenced expression. All readings to 2DP.}
 \label{fig:fig6}
@@ -629,7 +668,7 @@ In all but one case (trial 4) the confederate expressed according to the correct
 computed up by FaceReader (though the negative value in trial 4 is only slight in this case
 and less negative than for all low or negative reward outcomes). An independent samples
 *t*-test found a significant difference between low reward (including negative reward) vs
-high reward expressions, 95% CI[-.86, -.43], $t(18) = -6.36$, $p<.001$. Figure 7 shows
+high reward expressions, 95% CI[-.86, -.43], $t(18) = -6.36$, $p<.001$. Figure 6 shows
 example expressions taken from the 20 trial sequence for positive (Figure 6 left) and negative
 (Figure 6 right) valence, respectively.
 
@@ -641,7 +680,7 @@ include_graphics("figure7.jpg")
 ```
 
 
-It was observed that Action Units (see @ekman_facial_2002) 12, or AU12 (Lip Corner Puller), for positively
+It was observed that Action Units [see @ekman_facial_2002] 12, or AU12 (Lip Corner Puller), for positively
 valenced expression and AU5 (Upper Lid Raiser) for negatively valenced expression
 were most typically used. In the case of the former, AU12 in the absence of expression
 of AU6 (cheek raiser) may be indicative of a non-Duchenne (social) smile or that
@@ -656,27 +695,29 @@ the present study did not analyse any higher frequency than 25Hz, such sampling 
 deemed more than sufficient since only a sampling rate of 2.5 times that of the frequency
 is required for analysis [@cantor2013clinical]. The board communicates wirelessly to a
 computer via Bluetooth and the data was recorded using OpenBCI’s own graphical user
-interface.
+interface. 
 
 Further, the associated OpenBCI headset Mark IV was used. The headset is able to target
 35 electrode locations of the 10-20 system. The locations used in Experiment 2 are those
 of the original locations of the headset. After a pilot study using the device the original
 electrode placements were shown to generate superior contact compared to other
-locations and provided a coarse distributed signal across the scalp. The locations used
+locations and provided a coarse distributed signal across the scalp. Electrodes at the earlobes
+were used as reference. The locations used
 were: Fp1, Fp2, C3, C4, P7, P8, O1 and O2 according to the 10-20 system. Fp1, Fp2, O1
 and O2 have previously been used for emotional detection [@musha1997feature]
 and C3 and C4 are common locations for detecting mu rhythmicity
 [@oberman2007human] the suppression in activity of which (in these central brain regions)
-being considered to reflect mirror neuron activity [@hobson2016mu; @oberman2007human].
+being considered to reflect mirror neuron activity [@oberman2007human]. It should be noted though
+that the robustness of mu suppression as an indicator for mirror neuron system activation has been questioned [@hobson2016mu].
 
 #### Data analysis
 
-To transform and interpret EEG data, MATLAB (MathWorks, Natick, MA, United
-States) and the EEGLAB toolbox [@delorme2004eeglab] were used. A semiautomatic
-pipeline consisting of MATLAB-scripts imported the EEG data alongside
-event markers (for events such as stimuli and outcome presentation for the various
-stages), filtered it (4-45 Hz including a notch between 48.5 and 52.5 Hz), ran independent
-component analysis, removed artefacts caused by eye-blinks or power line noise spikes
+Electrodes recorded during the whole experiment but solely data from Stage 2 when the confederate
+reacted to the outcomes (and the non-social equivalent) were analysed (approximately 30 seconds per 
+participant and condition). To transform and interpret the EEG data, MATLAB (MathWorks, Natick, MA, 
+United States) and the EEGLAB toolbox [@delorme2004eeglab] were used. A semiautomatic pipeline consisting
+of MATLAB-scripts imported the EEG data alongside event markers (for events such as stimuli and outcome 
+presentation for the various stages), filtered it (4-45 Hz including a notch between 48.5 and 52.5 Hz), ran independent component analysis, removed artefacts caused by eye-blinks or power line noise spikes
 (re-referenced affected channels) and extracted descriptive statistics of the stages for each
 participant.
 
@@ -693,7 +734,11 @@ allow for emotional expressions to provide a means for vicarious value learning 
 emotional contagion. The explicit responses and outcomes of the confederate were not
 shown so participants were required to make stimulus-emotional expression associations
 (see Figure 7 for trial progression) that through emotional contagion might directly tap
-into the other’s (stimulus) value representation.
+into the other’s (stimulus) value representation. In written instructions participants were
+told that they would receive points for responding correctly, by pressing one out of two buttons on 
+the computer screen after a picture was presented (Stage 1). The instructions stated that after this
+they would watch and observe a video relating to simultaneously presented new pictures (Stage 2)
+and that they then would perform a similar task as in Stage 1 (Stage3).
 
 ```{r figure7, echo=FALSE, out.width='100%', fig.align="center", fig.cap="Trial progression Stage 2. Left. Non-social animated stimulus. Right. Social video stimulus (confederate). For each trial the participant was presented with a stimulus superimposed on the right white panel (top right) for 1000ms, followed by a blank/white (stimulus) panel for a further 2000ms. The video sequence in both social and non-social conditions endured for the whole trial (left white panel). The video stimulus substituted for explicit outcomes (see Figure 3) in the social condition so that the expression of the confederate provided the only cue as to the outcomes (high reward / low reward). All but the first trial was expressed as reward – the punishment/negative reward (shocked expression), as used in Experiment 1, was intended to increase believability in the confederate. In the non-social condition outcomes were made explicit (faded in, see left bottom screen). The animation video in this non-social condition was used to control for the fact that the social condition now also used a video. The score bar (left side of screen) remained at that which the participant had achieved in Stage 1."}
 
@@ -863,6 +908,21 @@ fpo_effect <- with(eeg,                      # Get effect size for the average o
                           rowMeans(data.frame(Fp_NSoc, P_NSoc, O_NSoc)), 
                           method = 'paired'))
 
+f_test <- with(eeg,                          # Perform t-test for the average of the rest of the electrodes
+                 t.test(Fp_Soc,
+                        Fp_NSoc,
+                        paired = T, alternative = "two.sided"))
+
+p_test <- with(eeg,                          # Perform t-test for the average of the rest of the electrodes
+                 t.test(P_Soc,
+                        P_NSoc,
+                        paired = T, alternative = "two.sided"))
+
+o_test <- with(eeg,                          # Perform t-test for the average of the rest of the electrodes
+                 t.test(O_Soc,
+                        O_NSoc,
+                        paired = T, alternative = "two.sided"))
+
 
 ```
 
@@ -873,25 +933,44 @@ electrode C3 and C4. Participants showed an unexpected increase in mu band power
 observing the social videos ($M =$ `r round(mu_desc[1,1], 3)`, $SD =$ `r round(mu_desc[2,1], 3)` 
 power spectral density) compared to
 the non-social videos ($M =$ `r mu_desc[1,2] %>% round(3)`, $SD =$ `r mu_desc[2,2] %>% round(3)` 
-power spectral density), a statistically significant mean increase of 0.29 in power spectral density was found, 95% CI [`r mu_test[["conf.int"]][1] %>% round(3)`, `r mu_test[["conf.int"]][2]%>% round(3)`], $t$( `r mu_test[["parameter"]][["df"]]`) = `r mu_test[["statistic"]][["t"]] %>% round(3)`, $p$ = `r mu_test[["p.value"]] %>% round(3)`, $d =$ `r mu_effect %>% round(3)`.
-Furthermore, to potentially explain the unexpected
-direction of the mu effect, a paired-samples *t*-test was used to determine whether there
-was a significant mean difference between social and non-social videos in 8-12 Hz (alpha
-band frequency range) amplitude averaged over the remaining electrodes, that is Fp1,
-Fp2, P7, P8, O1 and O2. Participants showed an increase in the alpha band frequency
-range when observing the social videos 
-($M =$ `r fpo_desc[1,1] %>% round(3)`, $SD =$ `r fpo_desc[2,1] %>% round(3)` 
-power spectral density) as compared to the non-social videos 
-($M =$  `r fpo_desc[1,2] %>% round(3)`, $SD =$ `r fpo_desc[2,2] %>% round(3)` 
-power spectral density), a statistically significant mean increase of `r (fpo_desc[1,1] - fpo_desc[1,2])%>% round(3)`
-in power spectral density, 
-95% CI [`r fpo_test[["conf.int"]][1]%>% round(3)`, `r fpo_test[["conf.int"]][2]%>% round(3)`], $t$(`r fpo_test[["parameter"]][["df"]]`) = `r fpo_test[["statistic"]][["t"]]%>% round(3)`, $p$ = `r fpo_test[["p.value"]] %>% round(3)`, $d$ = `r fpo_effect %>% round(3)`.
+power spectral density), a statistically significant mean increase of 0.29 in power spectral density was found, 95% CI [`r mu_test[["conf.int"]][1] %>% round(3)`, `r mu_test[["conf.int"]][2]%>% round(3)`], $t$( `r mu_test[["parameter"]][["df"]]`) = `r mu_test[["statistic"]][["t"]] %>% round(3)`, $p$ = `r mu_test[["p.value"]] %>% round(3)`, $d =$ `r mu_effect %>% round(3)`. To potentially explain this unexpected effect three paired t-tests were used determine whether there were significant mean amplitude differences between social and non-social videos in the 8-12 Hz (alpha band) frequency range for frontal, parietal and occipital electrodes. The results are shown in table 1. Most clearly a mean difference is exhibited in the parietal electrodes, but there also seems to be a trend towards a difference in the occipital locations. 
+
+<!-- Furthermore, to potentially explain the unexpected -->
+<!-- direction of the mu effect, a paired-samples *t*-test was used to determine whether there -->
+<!-- was a significant mean difference between social and non-social videos in 8-12 Hz (alpha -->
+<!-- band frequency range) amplitude averaged over the remaining electrodes, that is Fp1, -->
+<!-- Fp2, P7, P8, O1 and O2. Participants showed an increase in the alpha band frequency -->
+<!-- range when observing the social videos -->
+<!-- ($M =$ `r fpo_desc[1,1] %>% round(3)`, $SD =$ `r fpo_desc[2,1] %>% round(3)` -->
+<!-- power spectral density) as compared to the non-social videos -->
+<!-- ($M =$  `r fpo_desc[1,2] %>% round(3)`, $SD =$ `r fpo_desc[2,2] %>% round(3)` -->
+<!-- power spectral density), a statistically significant mean increase of `r (fpo_desc[1,1] - fpo_desc[1,2])%>% round(3)` -->
+<!-- in power spectral density, -->
+<!-- 95% CI [`r fpo_test[["conf.int"]][1]%>% round(3)`, `r fpo_test[["conf.int"]][2]%>% round(3)`], $t$(`r fpo_test[["parameter"]][["df"]]`) = `r fpo_test[["statistic"]][["t"]]%>% round(3)`, $p$ = `r fpo_test[["p.value"]] %>% round(3)`, $d$ = `r fpo_effect %>% round(3)`. -->
+
+\begin{table}[!htbp]
+\captionof{table}{Mean difference in frequency amplitude over 8-12 Hz over frontal, parietal and occipital electrodes in the social and the non-social condition.} \label{tab:title}
+\centering
+\begin{tabular}{lcccccccccc}
+\hline
+&&&& \multicolumn{2}{c}{Social} & & \multicolumn{2}{c}{Non-Social}  &  \\\cline{5-6} \cline{8-9}
+&&&& Mean & SD & & Mean  & SD  & \textit{t} & \textit{p} \\
+\hline
+Fp1 and Fp2 &&&& `r mean(eeg$Fp_Soc, na.rm=T) %>% round(3)`  & `r sd(eeg$Fp_Soc, na.rm=T) %>% round(3)` & & `r mean(eeg$Fp_NSoc, na.rm=T) %>% round(3)` & `r sd(eeg$Fp_NSoc, na.rm=T) %>% round(3)`  & `r f_test[["statistic"]]%>% round(3)` & `r f_test[["p.value"]]%>% round(3)`  \\
+P7 and P8 &&&& `r mean(eeg$P_Soc, na.rm=T) %>% round(3)`  & `r sd(eeg$P_Soc, na.rm=T) %>% round(3)` & & `r mean(eeg$P_NSoc, na.rm=T) %>% round(3)` & `r sd(eeg$P_NSoc, na.rm=T) %>% round(3)`  & `r p_test[["statistic"]]%>% round(3)` & `r p_test[["p.value"]]%>% round(3)`  \\
+O1 and O2 &&&& `r mean(eeg$O_Soc, na.rm=T) %>% round(3)`  & `r sd(eeg$O_Soc, na.rm=T) %>% round(3)` & & `r mean(eeg$O_NSoc, na.rm=T) %>% round(3)` & `r sd(eeg$O_NSoc, na.rm=T) %>% round(3)`  & `r o_test[["statistic"]]%>% round(3)` & `r o_test[["p.value"]]%>% round(3)`  \\
+\hline
+\\
+\end{tabular}
+ {\raggedright \small{\textit{Note:} SD = standard deviation. Frequency amplitude averaged over left and right electrodes.} \par}
+\end{table}
+
 
 ### Subjective report
 
 ```{r subrep, echo=FALSE, include=FALSE}
 
-cron_alpha <- psych::alpha(exp2_quest, check.keys = TRUE)$total$std.alpha
+cron_alpha <- psych::alpha(exp2_quest, check.keys = TRUE)$total$raw_alpha
 
 ```
 
@@ -917,15 +996,33 @@ experiment, therefore, participants appear to have been able to learn from the a
 expression of the confederate the value of the novel stimuli and transfer this knowledge
 as well as that of E-R based associations learned in Stage 1 to the test phase Stage 3.
 Again, participants, at the beginning of Stage 3, have had no exposure to the particular
-SR pairings that are relevant to obtain the rewarding outcomes. The EEG findings, relevant
-to providing a measure of perceived social presence in participants, require some
-interpretation. The finding of an increase in mu band power was the opposite of that
-hypothesized, however, a possible explanation for this might be inadequate separation
-from alpha indicated by the subsequent alpha analysis. It is therefore important to
-interpret these results in the context of the social versus non-social conditions and what
-cognitive and affective resources may have been brought to bear. The video (social versus
-non-social) independent variable had no significant effect on the amount of correct
-responses, also as expected. The subjective report (questionnaire) findings also lend
+S-R pairings that are relevant to obtain the rewarding outcomes. 
+
+The EEG findings, relevant for providing a measure of perceived social presence as well as 
+possible emotion recognition, require some interpretation. The finding of an increase in mu
+band power was the opposite of that hypothesized, however, a possible explanation for this might be
+inadequate separation from posterior alpha, indicated by the subsequent analyses of the other electrodes.
+The overlap between alpha and mu have been known to generate difficulties in differentiating the two
+and since attentional demand modulate alpha [@klimesch2007eeg], mu suppression could be confounded
+by such changes [@hobson2016mu; @oberman2007human]. Although the conditions were constructed and piloted
+as to not have differences in task difficulty, it is possible that the individual condition required 
+more attention - giving rise to a suppression of alpha activity. Inescapable differences in visual
+content can also have played a role. Further, @klimesch2007eeg suggests that during observation of an 
+action, higher level motor areas involved in motor planning, such as the  supplementary motor area (SMA),
+adjacent to the pre- and primary motor cortex, should exhibit increases in mu amplitude. It is therefore
+important to interpret these results in the context of the social versus non-social conditions and what
+cognitive and affective resources may have been brought to bear. 
+
+<!-- The EEG findings, relevant -->
+<!-- to providing a measure of perceived social presence in participants, require some -->
+<!-- interpretation. The finding of an increase in mu band power was the opposite of that -->
+<!-- hypothesized, however, a possible explanation for this might be inadequate separation -->
+<!-- from alpha indicated by the subsequent alpha analysis. It is therefore important to -->
+<!-- interpret these results in the context of the social versus non-social conditions and what -->
+<!-- cognitive and affective resources may have been brought to bear. -->
+
+The video (social versus non-social) independent variable had no significant effect on the amount of
+correct responses, also as expected. The subjective report (questionnaire) findings also lend
 support to participants either cognitively or emotionally empathizing with the
 confederate. Whilst it was not explicitly asked of participants whether they apprehended
 that the confederate was indeed a confederate – for fear of affecting future data collection
@@ -986,29 +1083,56 @@ that directly tapped into vicarious value learning (e.g. through emotional conta
 The uncovering of a social presence signal – mu suppression – as an indicator of mirror neuron
 activity would have provided evidence for a vicarious value learning strategy, however
 in Experiment 2 the opposite result was found. It is suggested that this effect is a product
-of inconsistent set-up of the EEG-headset and that it was not really mu rhythmicity that
-was detected at all. @oberman2007human, for example, suggested that their detection of
-mu, recorded at C3, Cz and C4, might be contaminated by posterior alpha activity since
-the two bands overlap, even though they took effort to control for this. @klimesch2007eeg
-proposed that during action observation mu rhythm should desynchronise but that
-areas involved in action planning such as the supplementary motor area (SMA), adjacent
-to the pre- and primary motor cortex, should exhibit increased synchronisation. Findings
-from @muthukumaraswamy2004changes and @muthukumaraswamy2004mu
-provide some support for this claim as they recorded 8-12 Hz desynchronizations over
-sensory-motor areas, and indeed, a synchronisation of alpha over SMA during action
-observation. 
+of inconsistent set-up of the EEG-headset and contamination from posterior alpha, which is suggested 
+by the subsequent follow up analysis where parietal electrodes exhibited the same systematic amplitude 
+difference between conditions. However, due to the low spatial resolution of EEG it is also difficult 
+to differentiate between mu motor/premotor activity and activity in other areas that are part of a 
+larger action observation/execution network [@oberman2007human]. This means that if electrodes also
+could pick up on activity from areas such as the SMA (just in front of the premotor cortex). Hence,
+given that our electrodes picked up mu activity from the SMA we would also see an increase in amplitude,
+if the previously discussed hypothesis by @klimesch2007eeg is true. Findings from
+@muthukumaraswamy2004changes and @muthukumaraswamy2004mu do provide some support for this claim as 
+they recorded 8-12 Hz desynchronizations over sensory-motor areas, and indeed, saw a synchronisation
+over SMA during action observation. 
 
-We postulate, therefore, that the synchronisation of mu over C3 and C4 has
-to do with the inconsistent set-up of the headset which possibly resulted in the
-contamination of alpha synchronisation from SMA consistent with the possibility of
-suppression of egocentric activity (self-planning) during perceived other responseoutcome 
-events. In the present research increased alpha band power was found in the
-social conditions as compared to the non-social (baseline) conditions. An implication of
-this is that measuring alpha synchronisation over SMA could constitute a neural signature
+We postulate, therefore, that in addition to sole contamination from posterior alpha, the increase of mu
+amplitude from our electrodes at C3 and C4 could be due to synchronisation from SMA. The latter is 
+consistent with the possibility of suppression of egocentric activity (self-planning) during perceived 
+other response-outcome events. In the present research increased amplitude in the 8-12 Hz range was found
+in the social conditions as compared to the non-social (baseline) conditions. An implication of
+this is that measuring synchronisation in this range over SMA could constitute a neural signature
 for the processing of social stimuli. However, further research, in combination with
-simultaneous mu (de)synchronization effects is necessary to be carried out. The presence
-of both would provide stronger evidence for the existence of vicarious value learning
-according to emotional contagion.
+simultaneous mu (de)synchronization over motor and premotor cortex is necessary to be carried out. The 
+presence of both would provide stronger evidence for the existence of vicarious value learning
+according to emotional contagion. 
+
+<!-- The uncovering of a social presence signal – mu suppression – as an indicator of mirror neuron -->
+<!-- activity would have provided evidence for a vicarious value learning strategy, however -->
+<!-- in Experiment 2 the opposite result was found. It is suggested that this effect is a product -->
+<!-- of inconsistent set-up of the EEG-headset and that it was not really mu rhythmicity that -->
+<!-- was detected at all. -->
+<!-- @oberman2007human, for example, suggested that their detection of -->
+<!-- mu, recorded at C3, Cz and C4, might be contaminated by posterior alpha activity since -->
+<!-- the two bands overlap, even though they took effort to control for this. -->
+<!-- @klimesch2007eeg proposed that during action observation mu rhythm should desynchronise but that -->
+<!-- areas involved in action planning such as the supplementary motor area (SMA), adjacent -->
+<!-- to the pre- and primary motor cortex, should exhibit increased synchronisation. Findings -->
+<!-- from @muthukumaraswamy2004changes and @muthukumaraswamy2004mu -->
+<!-- provide some support for this claim as they recorded 8-12 Hz desynchronizations over -->
+<!-- sensory-motor areas, and indeed, a synchronisation of alpha over SMA during action -->
+<!-- observation. -->
+
+<!-- We postulate, therefore, that a potential explanation for the synchronisation of mu over C3 and C4 has -->
+<!-- to do with the inconsistent set-up of the headset which possibly resulted in the -->
+<!-- contamination of alpha synchronisation from SMA consistent with the possibility of -->
+<!-- suppression of egocentric activity (self-planning) during perceived other response-outcome -->
+<!-- events. In the present research increased alpha band power was found in the -->
+<!-- social conditions as compared to the non-social (baseline) conditions. An implication of -->
+<!-- this is that measuring alpha synchronisation over SMA could constitute a neural signature -->
+<!-- for the processing of social stimuli. However, further research, in combination with -->
+<!-- simultaneous mu (de)synchronization effects is necessary to be carried out. The presence -->
+<!-- of both would provide stronger evidence for the existence of vicarious value learning -->
+<!-- according to emotional contagion. -->
 
 Future study is aimed at testing further the existence of vicarious value learning through
 Social Affective-Associative Two Process hypothesis, e.g. in competitive versus 
